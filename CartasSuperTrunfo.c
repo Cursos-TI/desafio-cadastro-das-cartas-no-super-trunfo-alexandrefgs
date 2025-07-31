@@ -1,26 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    // Declaração das variáveis da primeira carta
     char estado1[3], codigo1[10], nome1[50];
     int populacao1, pontosTuristicos1;
     float area1, pib1;
     float densidade1, pibPerCapita1;
 
-    // Declaração das variáveis da segunda carta
     char estado2[3], codigo2[10], nome2[50];
     int populacao2, pontosTuristicos2;
     float area2, pib2;
     float densidade2, pibPerCapita2;
 
-    // Leitura dos dados da primeira carta
     printf("Carta 1:\n");
     printf("Estado: ");
     scanf("%s", estado1);
     printf("Código: ");
     scanf("%s", codigo1);
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]", nome1); // lê até o final da linha
+    scanf(" %[^\n]", nome1);
     printf("População: ");
     scanf("%d", &populacao1);
     printf("Área (km²): ");
@@ -30,11 +27,9 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Cálculos para a primeira carta
     densidade1 = populacao1 / area1;
     pibPerCapita1 = (pib1 * 1000000000) / populacao1;
 
-    // Leitura dos dados da segunda carta
     printf("\nCarta 2:\n");
     printf("Estado: ");
     scanf("%s", estado2);
@@ -51,11 +46,9 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Cálculos para a segunda carta
     densidade2 = populacao2 / area2;
     pibPerCapita2 = (pib2 * 1000000000) / populacao2;
 
-    // Exibição dos resultados
     printf("\n--- Resultado ---\n");
 
     printf("\nCarta 1:\n");
